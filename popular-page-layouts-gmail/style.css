@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: grid;
+    height: 100vh;
+    grid-template:
+    "header header header header" 50px
+    "inbox emails settings add-ons" 1fr /
+    1fr 2.5fr 1fr 50px;
+    gap: 10px;
+}
+
+main > div {
+    border: 1px black solid;
+    text-align: center;
+}
+
+.header {
+    grid-area: header;
+    background-color: pink;
+}
+
+.inbox {
+    grid-area: inbox;
+    background-color: plum;
+}
+
+.emails {
+    grid-area: emails;
+    background-color: rgb(253, 172, 163);
+}
+
+.settings {
+    grid-area: settings;
+    background-color: peachpuff;
+}
+
+.add-ons {
+    grid-area: add-ons;
+    background-color: lightblue;
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        grid-template:
+        "header header header" 50px
+        "inbox emails settings" 1fr /
+        50px 1fr 150px;
+    }
+
+    .add-ons {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    main {
+        grid-template:
+        "header header" 50px
+        "inbox emails" 1fr /
+        50px 1fr;
+    }
+
+    .settings {
+        display: none;
+    }
+}

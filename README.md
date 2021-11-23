@@ -23,4 +23,4 @@ Replicate the high-level layout blocks of LinkedIn, Gmail, and Discord. Use the 
 - Make them responsive! You can refer to their live version to check out how they change when shrinking.
 
 ## Challenge 2
-- Try to recreate as much as you can of the inner layout of Gmail. Try to figure out how to use a grid to recreate the list of items and their inner layout.
+- Try to recreate as much as you can of the inner layf items and their inner layout.out of Gmail. Try to figure out how to use a grid to recreate the list o
